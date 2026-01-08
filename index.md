@@ -1,7 +1,7 @@
 Welcome to kinematic tracker documentation.
 
 ## Contents
- - [Quick look around](quick-look-around)
+ - [Gentle intro](gentle-intro)
  - [Best practice](best-practice)
 
 
