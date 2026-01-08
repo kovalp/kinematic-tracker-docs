@@ -10,6 +10,7 @@ requires-python = ">=3.14.2"
 dependencies = [
     "jupyter-book>=2.1.0",
     "jupyterlab>=4.5.1",
+    "kinematic-tracker>=15.7.1",
 ]
 
 [project.scripts]
