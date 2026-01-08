@@ -2,7 +2,7 @@ title: "Kinematic Tracker Documentation"
 author: Peter Koval
 description: "Little examples deployed on GitHub pages."
 # remote_theme: just-the-docs/just-the-docs
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: rundocs/jekyll-rtd-theme
 
 plugins:
   - jekyll-seo-tag
