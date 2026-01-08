@@ -1,7 +1,8 @@
 Welcome to kinematic tracker documentation.
 
 ## Contents
- - [Getting Started](getting-started.md)
+ - [Quick look around](quick-look-around)
+ - [Best practice](best-practice)
 
 
 

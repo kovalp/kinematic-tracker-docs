@@ -1,44 +1,34 @@
 <style>
 
-/* --- 1. PYTHON BLOCKS (Jupyter Notebook Style) --- */
-/* Target the wrapper div that Jekyll creates for Python */
 .language-python .highlight {
     background-color: #f7f7f7 !important; /* Light Grey */
-    border: 1px solid #e1e4e8;
     border-radius: 6px;
     color: #24292e; /* Dark Grey Text */
 }
 
-/* Add the 'In [ ]:' label */
-.language-python .highlight::before {
-    color: #303f9f; /* Jupyter Blue */
-    font-family: monospace;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-    font-size: 0.85em;
-    border-bottom: 1px solid #eee; /* Subtle separator */
-    padding-bottom: 4px;
-    width: 100%;
-}
-
-/* --- 2. SHELL/BASH BLOCKS (Terminal Style) --- */
-/* Target the wrapper div for Bash/Shell/Console */
 .language-bash .highlight,
 .language-sh .highlight,
 .language-shell .highlight,
 .language-console .highlight {
-    background-color: #1e1e1e !important; /* VS Code Dark */
-    border: 1px solid #333;
-    border-radius: 6px;
-    color: #d4d4d4; /* Light Grey/White Text */
-}
-
-/* Force code text inside terminal to be light color */
-.language-bash pre code,
-.language-sh pre code,
-.language-shell pre code {
-    color: #d4d4d4 !important;
+    background-color: #2e2e2e !important; /* VS Code Dark */
+    color: #00ffff; /* Light Grey/White Text */
 }
 
 </style>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
