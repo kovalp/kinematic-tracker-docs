@@ -1,5 +1,3 @@
-# Kinematic Tracker Documentation
-
 Welcome to kinematic tracker documentation.
 
 ## Contents

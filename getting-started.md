@@ -1,5 +1,3 @@
-# Getting started
-
 ## Quick look around
 
 ```shell
