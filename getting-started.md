@@ -17,8 +17,6 @@ print(len(tracker.tracks))
 ```
 
 
-
-
 ## Best practice: add to your project as dependency
 
 ```shell
