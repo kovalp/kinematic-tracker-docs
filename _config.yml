@@ -1,5 +1,13 @@
-title: Kinematic Tracker Documentation
+title: "Kinematic Tracker Documentation"
 author: Peter Koval
-syntax_highlighter_opts: slate
+description: "Little examples deployed on GitHub pages."
+theme: minima
+plugins:
+  - jekyll-seo-tag
 
+# This ensures GitHub recognizes your code blocks correctly
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
