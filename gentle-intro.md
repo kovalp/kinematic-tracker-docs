@@ -1,4 +1,4 @@
-## Quick look around
+## Gentle intro
 
 The kinematic tracker is available [on PyPI.org](https://pypi.org/project/kinematic-tracker/),
 therefore, you can install it using `pip`
@@ -70,39 +70,36 @@ Typically, very little known about an optimal choice of the measurement covarian
 Moreover, it could be changing from step-to-step and from object-to-object in the most general case. 
 The class `NdKkfTracker` provides a possibility to define one measurement covariance
 for all objects and time steps. Moreover, the simplest setter of the measurement covariance
-`tracker.set_measurement_std_dev` allows to define 
-the *diagonal* measurement covariance $\mathbf{R}$
+`tracker.set_measurement_cov` allows to define the matrix $\mathbf{R}$ directly.
+So, the line 
+
+```python
+tracker.set_measurement_cov( 4 * np.eye(4))
+```
+
+would define $\mathbf{R}$ to be a diagonal matrix
 
 $$
 \mathbf{R} = \begin{pmatrix}
-\sigma_p^2 & 0 & 0 & 0 \\
-0 & \sigma_p^2 & 0 & 0 \\
-0 & 0 & \sigma_s^2 & 0 \\
-0 & 0 & 0 & \sigma_s^2
+\sigma^2 & 0 & 0 & 0 \\
+0 & \sigma^2 & 0 & 0 \\
+0 & 0 & \sigma^2 & 0 \\
+0 & 0 & 0 & \sigma^2
 \end{pmatrix}
 $$
 
-```python
-tracker.set_measurement_std_dev(0, 1.0)
-tracker.set_measurement_std_dev(1, 2.0)
-```
-
-where $\sigma_p=1$ and $\sigma_s=2$.
+with standard deviation $\sigma=2$.
 
 Once the measurement noise covariance is defined, we can start tracking
 
 ```python
-tracker.advance(0, [np.array([1.0, 2.0, 0.1, 0.2])], [0])
+tracker.advance(0, [np.array([1.0, 2.0, 0.1, 0.2])])
 ```
 
 The method `tracker.advance()` takes timestep in nanoseconds as first argument.
 The list of measurement vectors $[\mathbf{z}_0, \mathbf{z}_1 \ldots \mathbf{z}_n]$ 
-should be provided in the second argument. Finally, a list of integer annotation IDs
-$[\mathrm{id}_0, \mathrm{id}_1 \ldots \mathrm{id}_n]$ goes into the third argument.
-The list of measurements could be given as two-dimensional NumPy array. The object
-ids is obligatory. The object ids allow to pry into the association matching,
-albeit they are not used in the decision-making. If you are not into a analysis 
-of the association process, the content of annotation ids can be arbitrary.
+should be provided in the second argument. The list of measurements could be given
+as two-dimensional NumPy array as well.
 
 After the call, the tracker will have one target with the state $\mathbf{x} = (1.0, 0.0, 2.0, 0.0, 0.1, 0.2)$. 
 
@@ -113,3 +110,27 @@ print(tracker.tracks)
 ```terminaloutput
 [TrackNdKkf(x = [1.  0.  2.  0.  0.1 0.2])]
 ```
+
+We can access other variables of the target such as its prior and posterior error covariances
+
+```python
+print(tracker.tracks[0].kkf.kalman_filter.errorCovPre)
+```
+
+```terminaloutput
+array([[  4.,   0.,   0.,   0.,   0.,   0.],
+       [  0., 100.,   0.,   0.,   0.,   0.],
+       [  0.,   0.,   4.,   0.,   0.,   0.],
+       [  0.,   0.,   0., 100.,   0.,   0.],
+       [  0.,   0.,   0.,   0.,   4.,   0.],
+       [  0.,   0.,   0.,   0.,   0.,   4.]])
+```
+
+Note, that we use OpenCV Kalman filters internally.
+
+The output shows that the position part of the error covariance is initialized from the 
+measurement noise covariance, while the velocity part got a large variance `100`.
+The initial variances for the derivatives in all parts and dimensions is predefined 
+in the tracker in a vector `tracker.ini_der_vars`. The size of the vector is 
+equal to the number of variables in the measurement vector (4). If the vector 
+is adjusted, then only the new targets will get updated initial variances. 
