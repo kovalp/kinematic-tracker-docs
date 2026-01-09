@@ -133,4 +133,4 @@ measurement noise covariance, while the velocity part got a large variance `100`
 The initial variances for the derivatives in all parts and dimensions is predefined 
 in the tracker in a vector `tracker.ini_der_vars`. The size of the vector is 
 equal to the number of variables in the measurement vector (4). If the vector 
-is adjusted, then only the new targets will get updated initial variances. 
+is adjusted, then only the new targets will get updated initial variances.

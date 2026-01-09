@@ -5,34 +5,50 @@
     </marker>
   </defs>
 
-   <rect width="100%" height="100%" fill="#ffffff" />
+  <style>
+    .latin-math {
+      font-family: serif;
+      font-style: italic;
+      font-size: 18px;
+    }
+    .ruler {
+    stroke: #ff2f00;
+    stroke-width: 1px;
+    }
+    .axis {
+    stroke: #333;
+    stroke-width: 2px;
+    marker-end: url(#arrow);
+    }
+  </style>
 
-  <line x1="20" y1="150" x2="380" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="370" y="180" font-family="serif" font-style="italic" font-size="20">x</text>
+  <rect width="100%" height="100%" fill="#ffffff" />
 
-  <line x1="200" y1="280" x2="200" y2="20" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
-  <text x="210" y="30" font-family="serif" font-style="italic" font-size="20">y</text>
+  <g transform="translate(-200, -10) scale(1.5)">
+  <line x1="140" y1="150" x2="380" y2="150" class="axis" />
+  <text x="365" y="170" class="latin-math">x</text>
 
-  <rect x="220" y="50" width="110" height="60" fill="rgba(48, 63, 100, 0.5)" stroke="#303f9f" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="200" y1="200" x2="200" y2="20" class="axis" />
+  <text x="210" y="33" class="latin-math">y</text>
 
-      <circle cx="275" cy="80" r="4" fill="#002fff" />
-      <text x="255" y="95" font-family="serif" font-size="18" fill="#002fff">
-        (p<tspan dy="3" font-size="12">x</tspan>
-          <tspan dx="-3" dy="-3" font-size="18">,
-         p</tspan><tspan dy="3" font-size="12">y</tspan>)
-      </text>
+  <rect x="220" y="50" width="110" height="60"
+        fill="rgba(48, 63, 100, 0.5)" stroke="#303f9f" stroke-width="2" stroke-dasharray="5,5" />
 
-    <line x1="220" y1="120" x2="330" y2="120" stroke="#666" stroke-width="1" />
-    <line x1="220" y1="115" x2="220" y2="125" stroke="#666" stroke-width="1" />
-    <line x1="330" y1="115" x2="330" y2="125" stroke="#666" stroke-width="1" />
-    <text x="270" y="135" font-family="serif" font-style="italic" font-size="18" fill="#666">s
-    <tspan dx="-3" dy="3" font-size="12">x</tspan></text>
+  <circle cx="275" cy="80" r="4" fill="#002fff" />
+  <text x="251" y="95" fill="#002fff" class="latin-math">
+  (p<tspan dy="3" font-size="12">x</tspan>
+   <tspan dx="-2" dy="-3" font-size="18">,</tspan>
+   p<tspan dy="3" font-size="12">y</tspan>)
+   </text>
 
-    <line x1="340" y1="50" x2="340" y2="110" stroke="#666" stroke-width="1" />
-    <line x1="335" y1="50" x2="345" y2="50" stroke="#666" stroke-width="1" />
-    <line x1="335" y1="110" x2="345" y2="110" stroke="#666" stroke-width="1" />
-    <text x="345" y="85" font-family="serif" font-style="italic" font-size="18" fill="#666">s
-      <tspan dx="-3" dy="3" font-size="12">y</tspan>
-    </text>
+    <line x1="220" y1="120" x2="330" y2="120" class="ruler"/>
+    <line x1="220" y1="115" x2="220" y2="125" class="ruler"/>
+    <line x1="330" y1="115" x2="330" y2="125" class="ruler"/>
+    <text x="270" y="135" class="latin-math" fill="#ff2f00">s<tspan dy="3" font-size="12">x</tspan></text>
 
+    <line x1="340" y1="50" x2="340" y2="110" class="ruler"/>
+    <line x1="335" y1="50" x2="345" y2="50" class="ruler"/>
+    <line x1="335" y1="110" x2="345" y2="110" class="ruler"/>
+    <text x="345" y="85" class="latin-math" fill="#ff2f00">s<tspan dy="3" font-size="12">y</tspan></text>
+    </g>
 </svg>
