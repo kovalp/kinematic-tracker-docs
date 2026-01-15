@@ -8,7 +8,7 @@ point-motion models. For example, to track bounding boxes in 2D using constant-v
 for their centers and constant-position for their sizes we could play with the following script 
 
 ```python
-from kinematic_tracker.tracker.tracker import NdKkfTracker
+from kinematic_tracker import NdKkfTracker
 import numpy as np
 
 tracker = NdKkfTracker([2, 1], [2, 2])

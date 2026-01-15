@@ -43,7 +43,7 @@ to convey this choice, we initialize the tracker object with a list of kinematic
 and a list of dimensions `[2, 2]` for positions and sizes:
 
 ```python
-from kinematic_tracker.tracker.tracker import NdKkfTracker
+from kinematic_tracker import NdKkfTracker
 
 tracker = NdKkfTracker([2, 1], [2, 2])
 ```
