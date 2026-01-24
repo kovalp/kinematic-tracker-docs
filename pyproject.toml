@@ -11,6 +11,10 @@ dependencies = [
     "jupyter-book>=2.1.0",
     "jupyterlab>=4.5.1",
     "kinematic-tracker>=16.1.0",
+    "nbmake>=1.3.0",
+    "pytest<9.0.0",
+    "pytest-cov>=7.0.0",
+    "pytest-notebook>=0.10.0",
 ]
 
 [project.scripts]

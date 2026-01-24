@@ -5,7 +5,7 @@ nav_exclude: true
 search_exclude: true
 ---
 
-# Local deploy of Jekyll server
+## Local deploy of Jekyll server
 
 Install Ruby
 
@@ -28,7 +28,16 @@ bundle exec jekyll serve
 View in your browser at http://127.0.0.1:4000, change .md and .html files and reload pages in the browser.
 
 
+## Test the notebooks
 
 
+```shell
+uv run pytest --nbmake examples/
+```
 
+or 
+
+```shell
+uv run pytest examples/ex001_start.ipynb --nb-test-files
+```
 

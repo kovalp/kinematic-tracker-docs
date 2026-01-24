@@ -19,3 +19,7 @@ Gemfile.lock
 
 # MyST build outputs
 _build
+.coverage
+.python-version
+examples/.ipynb_checkpoints/ex001_start-checkpoint.ipynb
+examples/.ipynb_checkpoints/tutorial_config-checkpoint.ipynb
