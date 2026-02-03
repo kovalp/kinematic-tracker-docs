@@ -20,6 +20,20 @@ as simple as running
 uv add kinematic-tracker
 ```
 
+If you happen to need GUI-enabled version of OpenCV, then add `opencv-python` as dependency
+
+```shell
+uv add opencv-python
+```
+
+and add to your `pyproject.toml` this `exclude-dependencies` list
+
+```toml
+[tool.uv]
+exclude-dependencies = ["opencv-python-headless"]
+```
+
+
 ## Examples in unit tests
 
 A number of simple examples are available in the `test/tutorials` folder.
