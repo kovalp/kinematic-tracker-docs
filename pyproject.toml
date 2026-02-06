@@ -1,7 +1,7 @@
 [project]
 name = "kinematic-tracker-docs"
 version = "0.1.0"
-description = "Add your description here"
+description = "This will be relevant when I provide some examples. ???"
 readme = "README.md"
 authors = [
     { name = "Peter Koval", email = "pkoval@vicomtech.org" }
