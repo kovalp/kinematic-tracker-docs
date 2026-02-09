@@ -7,7 +7,7 @@ The package is uploaded to the PyPI registry [kinematic tracker](https://pypi.or
 So, we can easily install it using `pip`
 
 ```shell
-pip install kinematic-tracker
+pip install kinematic-tracker[gui]
 ```
 
 ## Best practice
@@ -17,22 +17,14 @@ a dependency. Using `uv` as the package manager, the adding can be done
 as simple as running  
 
 ```shell
-uv add kinematic-tracker
+uv add kinematic-tracker --extra headless
 ```
 
 If you happen to need GUI-enabled version of OpenCV, then add `opencv-python` as dependency
 
 ```shell
-uv add opencv-python
+uv add opencv-python --extra gui
 ```
-
-and add to your `pyproject.toml` this `exclude-dependencies` list
-
-```toml
-[tool.uv]
-exclude-dependencies = ["opencv-python-headless"]
-```
-
 
 ## Examples in unit tests
 

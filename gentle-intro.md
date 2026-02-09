@@ -4,7 +4,7 @@ The kinematic tracker is available [on PyPI.org](https://pypi.org/project/kinema
 therefore, you can install it using `pip`
 
 ```shell
-pip install kinematic-tracker
+pip install kinematic-tracker[gui]
 ```
 
 Having the tracker installed, we can use the tracker in Pythons scripts.
