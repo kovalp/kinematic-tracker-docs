@@ -14,7 +14,7 @@ import numpy as np
 tracker = NdKkfTracker([2, 1], [2, 2])
 tracker.set_measurement_cov( 4 * np.eye(4))
 tracker.advance(12345, [np.array([1.0, 2.0, 0.1, 0.2])])
-print(tracker.tracks)
+print(tracker.tracks_c[0])
 ```
 
 In this script we defined the tracker to have states $\mathbf{x}$ consisting of two 2D *parts*: positions and sizes.
@@ -32,11 +32,14 @@ As a result we should be able to see current list of targets which includes just
 [TrackNdKkf(x = [1.  0.  2.  0.  0.1 0.2])]
 ```
 
+The tracks are sorted by (object) class index. By default there is just one class, so the list 
+of targets should be accessed via `tracker.tracks_c[0]`.
+
 Internally, we use OpenCV Kalman filters. We can access other variables of the target
 such as its prior and posterior error covariances
 
 ```python
 ...
-print(tracker.tracks[0].kkf.kalman_filter.errorCovPre)
-print(tracker.tracks[0].kkf.kalman_filter.errorCovPost)
+print(tracker.tracks_c[0][0].kkf.kalman_filter.errorCovPre)
+print(tracker.tracks_c[0][0].kkf.kalman_filter.errorCovPost)
 ```

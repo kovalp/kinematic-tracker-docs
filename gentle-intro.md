@@ -104,8 +104,12 @@ as two-dimensional NumPy array as well.
 After the call, the tracker will have one target with the state $\mathbf{x} = (1.0, 0.0, 2.0, 0.0, 0.1, 0.2)$. 
 
 ```python
-print(tracker.tracks)
+print(tracker.tracks_c[0])
 ```
+
+The tracks are sorted by (object) class index. By default there is just one class, so the list 
+of targets should be accessed via `tracker.tracks_c[0]`.
+
 
 ```terminaloutput
 [TrackNdKkf(x = [1.  0.  2.  0.  0.1 0.2])]
@@ -114,7 +118,7 @@ print(tracker.tracks)
 We can access other variables of the target such as its prior and posterior error covariances
 
 ```python
-print(tracker.tracks[0].kkf.kalman_filter.errorCovPre)
+print(tracker.tracks_c[0][0].kkf.kalman_filter.errorCovPre)
 ```
 
 ```terminaloutput
