@@ -1,6 +1,8 @@
 # Kinematic tracker
 
-<img src="logo-kinematic-tracker.svg" width="192" alt="logo">
+<div align="center" style="background: white; padding: 20px; border-radius: 8px;">
+{% include logo-kinematic-tracker.svg %}
+</div>
 
 Welcome to kinematic tracker documentation.
 
