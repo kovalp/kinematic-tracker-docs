@@ -1,19 +1,6 @@
 # Kinematic tracker
 
-<div style="background: white; padding: 20px; border-radius: 8px;">
-  <div class="logo-container">
-    {% include logo-kinematic-tracker.svg %}
-  </div>
-</div>
-
-<style>
-  /* Target the SVG inside your container */
-  .logo-container svg {
-    width: 100%;       /* Fill the container width */
-    max-width: 100px;  /* ...but don't get bigger than this */
-    height: auto;      /* Maintain aspect ratio */
-  }
-</style>
+<img src="logo-kinematic-tracker.png" width="96" alt="logo">
 
 
 Welcome to kinematic tracker documentation.

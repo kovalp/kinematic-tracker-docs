@@ -1,6 +1,8 @@
 ## Quick intro
 
-The `kinematic-tracker` is available [on PyPI.org](https://pypi.org/project/kinematic-tracker/),
+
+
+The `kinematic-tracker` is available [on PyPI.org](https://pypi.org/project/kinematic-tracker/)
 
 Having the tracker installed, we can use the tracker class `NdKkfTracker`.
 The class `NdKkfTracker` allows to define a state $\mathbf{x}$ composed of a set of N-dimensional
