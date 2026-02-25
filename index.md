@@ -1,6 +1,6 @@
 # Kinematic tracker
 
-<img src="_includes/logo-kinematic-tracker.svg" width="192" alt="logo">
+<img src="logo-kinematic-tracker.svg" width="192" alt="logo">
 
 Welcome to kinematic tracker documentation.
 
