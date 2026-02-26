@@ -1,6 +1,7 @@
 # Kinematic tracker
 
 <img src="logo-kinematic-tracker.png" width="96" alt="logo">
+<img src="logo-vicomtech.svg" width="96" alt="logo">
 
 
 Welcome to kinematic tracker documentation.
