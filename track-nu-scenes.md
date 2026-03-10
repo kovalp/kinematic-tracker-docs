@@ -22,7 +22,7 @@ from kinematic_tracker import NdKkfTracker
 tracker = NdKkfTracker([3, 1, 1], [3, 4, 3])
 ```
 
-To start tracking we need to define a measurement covariance
+To start tracking we need to set the measurement covariance
 
 ```python
 ...
@@ -37,7 +37,7 @@ We provide two flavors of GIoU: with yaw angle and axes-aligned.
 tracker.set_association_metric('giou-yaw')
 ```
 
-To start tracking, we call the `advance` method
+We call the `advance` method to track detections
 
 ```python
 ...
