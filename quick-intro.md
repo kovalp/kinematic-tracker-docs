@@ -15,7 +15,7 @@ import numpy as np
 
 tracker = NdKkfTracker([2, 1], [2, 2])
 tracker.set_measurement_cov( 4 * np.eye(4))
-tracker.advance(12345, [np.array([1.0, 2.0, 0.1, 0.2])])
+tracker.advance(12345, np.array([[1.0, 2.0, 0.1, 0.2]]))
 print(tracker.tracks_c[0])
 ```
 

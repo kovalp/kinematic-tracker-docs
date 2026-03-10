@@ -15,4 +15,5 @@ also commonly known as multiple-target tracking (MTT).
  - [Gentle intro](gentle-intro)
  - [Installation](installation)
  - [Quick intro](quick-intro)
+ - [3D tracking of nuScenes](track-nu-scenes)
 
