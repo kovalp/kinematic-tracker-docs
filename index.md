@@ -16,4 +16,6 @@ also commonly known as multiple-target tracking (MTT).
  - [Installation](installation)
  - [Quick intro](quick-intro)
  - [3D tracking of nuScenes](track-nu-scenes)
+ - [Derivative sorting](derivative-sorting)
+ - [Accessing tracked states](tracked-states)
 
