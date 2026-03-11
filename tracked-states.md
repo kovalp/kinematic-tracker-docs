@@ -20,7 +20,7 @@ Therefore, we can inspect the posterior state as in the snippet below
 
 ```python
 ...
-vec_x = track.kkf.kalman_filter.postState[:, 0]
+vec_x = track.kkf.kalman_filter.statePost[:, 0]
 ```
 
 Note that the internal distribution of variables in the state vectors
