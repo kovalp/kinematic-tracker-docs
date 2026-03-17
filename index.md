@@ -3,7 +3,6 @@
 <img src="logo-kinematic-tracker.png" width="96" alt="logo">
 <img src="logo-vicomtech.svg" width="192" alt="logo">
 
-
 Welcome to kinematic tracker documentation.
 
 The latest version of the `kinematick-tracker` is `20.4.1`
