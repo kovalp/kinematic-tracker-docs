@@ -1,3 +1,10 @@
+# Changelog
+
+# 20.5.0
+
+  - Add an experimental IoU-like two yaw association metric.
+  - Update (development) dependencies.
+
 # 20.4.1
 
   - Define range of Python versions >=3.11.
