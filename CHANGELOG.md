@@ -1,6 +1,14 @@
 # Changelog
 
-# 20.5.0
+# 20.6.0
+
+  - Define, debug and optimize the implementation of IoU-like-two-yaw metric.
+  - Make the new experimental metric (IoU-like-two-yaw) available.
+  - Remove the dangling average dim IoU metric.
+  - Add argument `ind_pos_w_rz_size` to customize the GIoU-yaw and IoU-like two yaw metrics.
+  - One less temporary array in the real IoU yaw metric.
+
+# 20.5.0 (yanked)
 
   - Add an experimental IoU-like two yaw association metric.
   - Update (development) dependencies.
