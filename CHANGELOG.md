@@ -1,5 +1,10 @@
 # Changelog
 
+# 20.7.0
+
+  - Correct the use of `arccos` function to be compatible with `numpy<=2.0.0`.
+  - Test with `numpy<=2.0.0`.
+
 # 20.6.0
 
   - Define, debug and optimize the implementation of IoU-like-two-yaw metric.
