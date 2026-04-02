@@ -4,7 +4,7 @@ After calling the `advance` method, the tracker updates the states $\lbrace\math
 To access the state vectors $\lbrace\mathbf{x}\rbrace$, we have to inspect the Kalman filter 
 objects in the tracks stored in the `tracker` object.
 
-For example, to access the first track of the first class need  
+For example, to access the first track of the first class  
 
 ```python
 ...
