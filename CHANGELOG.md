@@ -1,5 +1,11 @@
 # Changelog
 
+
+# 20.8.0
+
+  - Avoid inversion of covariance in the Mahalanobis metric by solving linear equation.
+
+
 # 20.7.0
 
   - Correct the use of `arccos` function to be compatible with `numpy<=2.0.0`.
