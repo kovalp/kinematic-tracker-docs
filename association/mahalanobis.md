@@ -22,7 +22,7 @@ in the measurement space. A popular choice of this covariance is so-called
 process covariance $P$ in measurement space $HPH^T$
 
 $$
-\Sigma_rt = R + H P_t H^T.
+\Sigma_{rt} = R + H P_t H^T.
 $$
 
 The matrices $H$, $P_t$ and $R$ are defined ($H$ and $R$) and
