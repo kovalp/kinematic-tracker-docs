@@ -1,7 +1,7 @@
 # Association metric
 
 Association metric is a matrix of likelihoods $A_{rt}$ between sets of detection
-reports (vectors) $\mathbf{z}_{r}$ and target (predicted) states $\tilde{\mathbf{x}}_{t}$.
+reports (vectors) $\mathbf{z}_{r}$ and target (predicted) states $\mathbf{x}_{t}$.
 Number of detections and targets generally differ, i.e. the association metric is
 a rectangular matrix $A_{rt}$.
 
@@ -39,7 +39,7 @@ Name for the setter `mahalanobis`.
 
 Defined via a so-called Mahalanobis distance [@ Wikipedia](https://en.wikipedia.org/wiki/Mahalanobis_distance).
 
-See our discussion of the [Mahalanobis association metric](association/mahalanobis)
+See our discussion of the [Mahalanobis association metric](mahalanobis)
 
 ## GIoU for cuboids aligned with Cartesian axes
 
@@ -48,14 +48,14 @@ Name for the setter `giou-axes-aligned`.
 Defined via a ratio of intersection and union volumes of cuboids
 [@ Medium](https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef).
 
-See our discussion of the [GIoU axes aligned metric](association/giou-axes-aligned).
+See our discussion of the [GIoU axes aligned metric](giou-axes-aligned).
 
 
 ## GIoU for yaw-oriented cuboids
 
 Name for the setter `giou-yaw`.
 
-See our discussion of the [GIoU yaw metric](association/giou-yaw).
+See our discussion of the [GIoU yaw metric](giou-yaw).
 
 
 ## Mahalanobis with size-modulated covariance
@@ -63,7 +63,7 @@ See our discussion of the [GIoU yaw metric](association/giou-yaw).
 Name for the setter `mahalanobis-size-modulated`.
 
 This metric is experimental. 
-See our discussion of the [size-modulated Mahalanobis](association/mahalanobis-size-modulated).
+See our discussion of the [size-modulated Mahalanobis](mahalanobis-size-modulated).
 
 
 ## GIoU-calibrated diagonal size-modulated Mahalanobis distance inside the exponent function
@@ -71,4 +71,4 @@ See our discussion of the [size-modulated Mahalanobis](association/mahalanobis-s
 Name for the setter `iou-like-two-yaw`.
 
 This metric is experimental. 
-See our discussion of the [iou-like-two-yaw](association/iou-like-two-yaw).
+See our discussion of the [iou-like-two-yaw](iou-like-two-yaw).
