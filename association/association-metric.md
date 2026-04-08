@@ -37,7 +37,7 @@ print([m.value for m in AssociationMetric])
 
 Name for the setter `mahalanobis`.
 
-Defined via [Mahalanobis distance @ Wikipedia](https://en.wikipedia.org/wiki/Mahalanobis_distance) $D$.
+Defined via a so-called Mahalanobis distance [@ Wikipedia](https://en.wikipedia.org/wiki/Mahalanobis_distance).
 
 See our discussion of the [Mahalanobis association metric](association/mahalanobis)
 
@@ -45,6 +45,30 @@ See our discussion of the [Mahalanobis association metric](association/mahalanob
 
 Name for the setter `giou-axes-aligned`.
 
+Defined via a ratio of intersection and union volumes of cuboids
+[@ Medium](https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef).
+
+See our discussion of the [GIoU axes aligned metric](association/giou-axes-aligned).
 
 
+## GIoU for yaw-oriented cuboids
 
+Name for the setter `giou-yaw`.
+
+See our discussion of the [GIoU yaw metric](association/giou-yaw).
+
+
+## Mahalanobis with size-modulated covariance
+
+Name for the setter `mahalanobis-size-modulated`.
+
+This metric is experimental. 
+See our discussion of the [size-modulated Mahalanobis](association/mahalanobis-size-modulated).
+
+
+## GIoU-calibrated diagonal size-modulated Mahalanobis distance inside the exponent function
+
+Name for the setter `iou-like-two-yaw`.
+
+This metric is experimental. 
+See our discussion of the [iou-like-two-yaw](association/iou-like-two-yaw).
