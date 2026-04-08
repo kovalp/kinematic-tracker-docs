@@ -17,13 +17,15 @@ a dependency. Using `uv` as the package manager, the adding can be done
 as simple as running  
 
 ```shell
-uv add kinematic-tracker --extra headless
+uv add opencv-python-headless
+uv add kinematic-tracker
 ```
 
 If you happen to need GUI-enabled version of OpenCV, then add `opencv-python` as dependency
 
 ```shell
-uv add opencv-python --extra gui
+uv add opencv-python
+uv add kinematic-tracker
 ```
 
 ## Examples in unit tests

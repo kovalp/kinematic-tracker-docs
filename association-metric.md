@@ -1,7 +1,7 @@
 # Association metric
 
 Association metric is a matrix of likelihoods $A_{rt}$ between sets of detection
-reports (vectors) $\mathbf{z}_r$ and target (predicted) states $\tilde{\mathbf{x}}_t$.
+reports (vectors) $\mathbf{z}_{r}$ and target (predicted) states $\tilde{\mathbf{x}}_{t}$.
 Number of detections and targets generally differ, i.e. the association metric is
 a rectangular matrix $A_{rt}$.
 
@@ -37,7 +37,7 @@ print([m.value for m in AssociationMetric])
 
 Name for the setter `mahalanobis`.
 
-Defined via [Mahalanobis distance](https://en.wikipedia.org/wiki/Mahalanobis_distance) $D$.
+Defined via [Mahalanobis distance @ Wikipedia](https://en.wikipedia.org/wiki/Mahalanobis_distance) $D$.
 
 See our discussion of the [Mahalanobis association metric](association/mahalanobis)
 
