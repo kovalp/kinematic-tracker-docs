@@ -24,7 +24,7 @@ $$
 $$
 
 Such a choice fits the data layout of several datasets 
-including the popular nuScenes dataset. See [our suggestion](track-nu-scenes)
+including the popular nuScenes dataset. See [our suggestion](../track-nu-scenes)
 for tracking nuScenes annotations. The performance of the axes-aligned GIoU
 is suboptimal comparing to GIoU for oriented cuboids.
 

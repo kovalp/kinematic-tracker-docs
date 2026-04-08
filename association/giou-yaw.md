@@ -20,5 +20,5 @@ the position of scalar part of the rotation quaternion $w$, position of the
 z-projection of the rotation quaternion $r_z$ and three size variables.
 When the argument is omitted, the sequence is `ind_pos_w_rz_size=(0,1,2,3,6,-3,-2,-1)`.
 Such a choice fits the data layout of the popular nuScenes dataset.
-See [our suggestion](track-nu-scenes) for tracking nuScenes annotations.
+See [our suggestion](../track-nu-scenes) for tracking nuScenes annotations.
 
