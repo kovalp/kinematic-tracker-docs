@@ -1,7 +1,7 @@
 # Association metric
 
 Association metric is a matrix of likelihoods $A_{rt}$ between sets of detection
-reports (vectors) $\mathbf{z}_{r}$ and target (predicted) states $\mathbf{x}_{t}$.
+reports (vectors) $\mathbf{z} _r $ and target (predicted) states $\mathbf{x} _t $.
 Number of detections and targets generally differ, i.e. the association metric is
 a rectangular matrix $A_{rt}$.
 
