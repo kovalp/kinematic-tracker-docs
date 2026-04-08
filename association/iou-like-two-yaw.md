@@ -39,8 +39,8 @@ $$\mathrm{scale}_{ij} = \frac{1}{(si_x + sj_x)^2}, \frac{1}{(si_y + sj_y)^2}, \f
 The precision matrix expressed in terms of the scale vectors
 
 $$
-P_ij = \mathrm{pos}_c * \mathrm{scale}_{ij}, \mathrm{quat}_c, \mathrm{quat}_c,
-\mathrm{size}_c * \mathrm{scale}_{ij},
+P_ij = \mathrm{pos}_c \mathrm{scale}_{ij}, \mathrm{quat}_c, \mathrm{quat}_c,
+\mathrm{size}_c \mathrm{scale}_{ij},
 $$
 
 where $\mathrm{pos}_c$, $\mathrm{quat}_c$, and $\mathrm{size}_c$, are calibration constants.
@@ -58,7 +58,7 @@ $$
 where $d_{ij}$ is the wrapped double geodesic distance
 
 $$
-d_{ij} = 4 * \arccos(|w_i * w_j + rz_i * rz_j|),
+d_{ij} = 4 * \arccos(|w_i w_j + rz_i rz_j|),
 $$
 $$
 d_{ij} = d_{ij} \text{ if } d_{ij} < \pi \text{ else } 2 \pi - d_{ij}.
