@@ -58,7 +58,7 @@ $$
 where $d_{ij}$ is the wrapped double geodesic distance
 
 $$
-d_{ij} = 4 * \arccos(|w_i w_j + rz_i rz_j|),
+d_{ij} = 4 \arccos(|w_i \, w_j + rz_i \, rz_j|),
 $$
 $$
 d_{ij} = d_{ij} \text{ if } d_{ij} < \pi \text{ else } 2 \pi - d_{ij}.
