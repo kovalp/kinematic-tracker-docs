@@ -1,4 +1,4 @@
-# Generalized intersection over union
+# Generalized intersection over union between axes-aligned cuboids
 
 Our implementation works only for 3D case. The version for the cuboids 
 aligned with Cartesian axes needs the detection vectors to have

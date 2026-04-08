@@ -22,11 +22,13 @@ in the measurement space. A popular choice of this covariance is so-called
 process covariance $P$ in measurement space $HPH^T$
 
 $$
-\Sigma = R + HPH^T.
+\Sigma_rt = R + H P_t H^T.
 $$
 
-The matrices $H$, $P$ and $R$ are defined ($H$ and $R$) and
-calculated ($P$) in Kalman filters.
+The matrices $H$, $P_t$ and $R$ are defined ($H$ and $R$) and
+calculated ($P_t$) in Kalman filters. $^T$ denotes the matrix transpose.
+Because the measurement covariance is set the same for all measurement vectors,
+we drop the report index from the measurement covariance $R$.  
 
 The Mahalanobis metric has a number of advantages:
 
