@@ -33,6 +33,9 @@ from kinematic_tracker.association.association_metric import AssociationMetric
 print([m.value for m in AssociationMetric])
 ```
 
+For a quick exploration of the association metric definition we 
+recommend our related project [Association studio](https://pypi.org/project/association-studio/) 
+
 ## Mahalanobis association metric
 
 Name for the setter `mahalanobis`.
