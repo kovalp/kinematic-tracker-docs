@@ -1,5 +1,12 @@
 # Changelog
 
+# 20.10.0
+
+  - Add typechecking via `ty` and fix typehints.
+
+# 20.9.0
+
+  - Reset the creation ID.
 
 # 20.8.0
 

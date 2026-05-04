@@ -5,7 +5,7 @@
 
 Welcome to kinematic tracker documentation.
 
-The latest version of the `kinematick-tracker` is `20.8.0`
+The latest version of the `kinematick-tracker` is `20.10.0`
 
 The package provides a collection of algorithms for multiple-object tracking (MOT),
 also commonly known as multiple-target tracking (MTT).
