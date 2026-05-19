@@ -1,5 +1,10 @@
 # Changelog
 
+# 21.0.0
+
+  - No `max_targets` or `max_reports` attributes, removed the setter.
+
+
 # 20.10.0
 
   - Add typechecking via `ty` and fix typehints.
