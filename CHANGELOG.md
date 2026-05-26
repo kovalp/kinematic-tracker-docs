@@ -1,5 +1,10 @@
 # Changelog
 
+# 22.0.0
+
+  - Vectorize the aligned IoU association metric. 
+
+
 # 21.0.0
 
   - No `max_targets` or `max_reports` attributes, removed the setter.
