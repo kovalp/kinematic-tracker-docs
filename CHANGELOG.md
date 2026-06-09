@@ -1,5 +1,10 @@
 # Changelog
 
+# 23.0.0
+
+  - Any dimension in the IoU for aligned cuboids.
+
+
 # 22.0.0
 
   - Vectorize the aligned IoU association metric. 
