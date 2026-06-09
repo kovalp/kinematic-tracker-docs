@@ -5,7 +5,7 @@
 
 Welcome to kinematic tracker documentation.
 
-The latest version of the `kinematick-tracker` is `22.0.0`
+The latest version of the `kinematick-tracker` is `23.0.0`
 
 The package provides a collection of algorithms for multiple-object tracking (MOT),
 also commonly known as multiple-target tracking (MTT).
@@ -14,6 +14,7 @@ also commonly known as multiple-target tracking (MTT).
  - [Gentle intro](gentle-intro)
  - [Installation](installation)
  - [Quick intro](quick-intro)
+ - [2D tracking of bounding boxes](track-bounding-boxes)
  - [3D tracking of nuScenes](track-nu-scenes)
  - [Derivative sorting](derivative-sorting)
  - [Accessing tracked states](tracked-states)
