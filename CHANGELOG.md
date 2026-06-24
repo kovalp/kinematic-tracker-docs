@@ -1,9 +1,12 @@
 # Changelog
 
+# 24.0.0
+
+  - Using `BufView` class from the external package.
+
 # 23.0.0
 
   - Any dimension in the IoU for aligned cuboids.
-
 
 # 22.0.0
 
