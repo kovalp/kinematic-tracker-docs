@@ -44,7 +44,9 @@ Defined via a so-called Mahalanobis distance [@ Wikipedia](https://en.wikipedia.
 
 See our discussion of the [Mahalanobis association metric](mahalanobis)
 
-## GIoU for cuboids aligned with Cartesian axes
+## GIoU for objects aligned with Cartesian axes
+
+Under **objects** we understand cuboids in any dimension: segments, bounding boxes, cuboids, etc.
 
 Name for the setter `giou-axes-aligned`.
 
@@ -52,7 +54,6 @@ Defined via a ratio of intersection and union volumes of cuboids
 [@ Medium](https://medium.com/analytics-vidhya/iou-intersection-over-union-705a39e7acef).
 
 See our discussion of the [GIoU axes aligned metric](giou-axes-aligned).
-
 
 ## GIoU for yaw-oriented cuboids
 
