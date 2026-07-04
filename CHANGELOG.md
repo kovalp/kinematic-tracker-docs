@@ -1,5 +1,9 @@
 # Changelog
 
+# 24.1.0
+
+  - Updating dependencies including the lock of the `OpenCV==5`.
+
 # 24.0.0
 
   - Using `BufView` class from the external package.
