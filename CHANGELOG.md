@@ -1,5 +1,9 @@
 # Changelog
 
+# 24.2.0
+
+  - Allow Python version 3.10 at the cost of somewhat slower GIoU with yaw.
+
 # 24.1.0
 
   - Updating dependencies including the lock of the `OpenCV==5`.
