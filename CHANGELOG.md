@@ -1,5 +1,11 @@
 # Changelog
 
+# 24.3.0
+
+  - OpenCV is bring-your-own: the extras `gui`/`headless` are optional; importing the tracker without `cv2` raises a helpful `ImportError`.
+  - Fix type errors reported by newer `ty`.
+  - Update dependencies.
+
 # 24.2.0
 
   - Allow Python version 3.10 at the cost of somewhat slower GIoU with yaw.

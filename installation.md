@@ -1,31 +1,43 @@
 # Installation
 
+The tracker needs OpenCV (`cv2`), but does not force a particular OpenCV distribution.
+
 ## Quick and easy using `pip`
 
 The package is uploaded to the PyPI registry [kinematic tracker](https://pypi.org/project/kinematic-tracker/)
 
-So, we can easily install it using `pip`
+If your environment already has OpenCV (`opencv-python`, `opencv-python-headless`,
+`opencv-contrib-python`, ...), just install the tracker and it will use that OpenCV
 
 ```shell
-pip install kinematic-tracker[gui]
+pip install kinematic-tracker
 ```
+
+Otherwise, let the tracker bring OpenCV via an extra: `headless` (no GUI) or `gui` (with HighGUI)
+
+```shell
+pip install kinematic-tracker[headless]
+```
+
+Do not install several OpenCV distributions side by side: they share the same `cv2` module
+and break each other. Importing the tracker without any OpenCV raises an `ImportError`
+explaining the options.
 
 ## Best practice
 
 To use the kinematic tracker in your projects we recommend adding it as 
-a dependency. Using `uv` as the package manager, the adding can be done
-as simple as running  
+a dependency. Using `uv` as the package manager, if the project already depends
+on an OpenCV distribution, then
 
 ```shell
-uv add opencv-python-headless
 uv add kinematic-tracker
 ```
 
-If you happen to need GUI-enabled version of OpenCV, then add `opencv-python` as dependency
+Otherwise, add it with an extra providing OpenCV: `headless` or, if you need
+a GUI-enabled OpenCV, `gui`
 
 ```shell
-uv add opencv-python
-uv add kinematic-tracker
+uv add kinematic-tracker --extra headless
 ```
 
 ## Examples in unit tests
