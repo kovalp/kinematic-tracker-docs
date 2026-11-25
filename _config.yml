@@ -14,3 +14,17 @@ kramdown:
   syntax_highlighter: rouge
   math_engine: mathjax  # Tells Jekyll to leave math blocks alone
 
+
+# Setting `exclude` replaces Jekyll's default list, so the defaults are repeated here.
+exclude:
+  - CLAUDE.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
